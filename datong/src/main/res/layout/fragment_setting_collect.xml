@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x60"
+        android:layout_marginBottom="@dimen/x30"
+        android:text="收藏设置"
+        android:textColor="@color/red_datong"
+        android:textSize="@dimen/x45" />
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_collect_autoCollect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="自动收藏单词"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_collect_autoCollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_collect_collectMode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="收藏方式"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:id="@+id/tv_setting_collect_collectMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:text="查词时自动收藏"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_collect_clickCollect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="点击查词时自动收藏"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_collect_clickCollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_collect_outsideQueryCollect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="跨软件查词时自动收藏"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_collect_outsideQueryCollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_collect_defaultBook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="默认单词本"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:id="@+id/tv_setting_collect_defaultBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:text="我的单词本"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45" />
+    </RelativeLayout>
+</LinearLayout>

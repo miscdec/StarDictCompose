@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    app:contentPaddingLeft="@dimen/x60">
+
+    <LinearLayout
+        android:id="@+id/linear_item_list_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_marginBottom="@dimen/x50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_list_dictCn_mistakes_wordClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v.(动词)"
+            android:textColor="@color/blue_dictCn"
+            android:textSize="@dimen/x40"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40">
+
+            <TextView
+                android:id="@+id/tv_item_list_dictCn_mistakes_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textSize="@dimen/x45"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x60"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_list_dictCn_mistakes_cn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="她拒绝和他结婚,我不感到惊奇"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x42" />
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_mistakes_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="This new medicine has made wonders for my headache."
+                    android:textSize="@dimen/x40" />
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_mistakes_proper01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="This new medicine has done wonders for my headache."
+                    android:textSize="@dimen/x40" />
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_mistakes_proper02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="This new medicine has worked wonders for my headache."
+                    android:textSize="@dimen/x40" />
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_mistakes_analyze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="表达“创造奇迹”可以说do wonders 或work wonders,但不能说make wonders。"
+                    android:textSize="@dimen/x40" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

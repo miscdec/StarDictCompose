@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x100"
+        android:layout_marginRight="@dimen/x20">
+
+        <ImageView
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_title" />
+
+        <EditText
+            android:id="@+id/et_edit_book_bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x28"
+            android:hint="名称"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/x46"
+            android:theme="@style/MyUIStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x100"
+        android:layout_marginRight="@dimen/x20">
+
+        <ImageView
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_sub_title" />
+
+        <EditText
+            android:id="@+id/et_edit_book_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x28"
+            android:hint="一句话描述"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/x46"
+            android:theme="@style/MyUIStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_edit_book_bookClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x120"
+        android:layout_marginRight="@dimen/x20">
+
+        <ImageView
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_class" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x110"
+            android:text="分类"
+            android:textColor="#000000"
+            android:textSize="@dimen/x44" />
+
+        <TextView
+            android:id="@+id/tv_edit_book_className"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:text="未选择"
+            android:textSize="@dimen/x44" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x120"
+        android:layout_marginRight="@dimen/x20">
+
+        <ImageView
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_palette" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x110"
+            android:text="颜色"
+            android:textColor="#000000"
+            android:textSize="@dimen/x44" />
+
+        <ImageView
+            android:id="@+id/img_edit_book_selectedColor"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x40"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_round" />
+    </RelativeLayout>
+
+    <com.datong.dict.widget.base.BaseRecyclerView
+        android:id="@+id/list_edit_book_colorSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x100"
+        android:layout_marginRight="@dimen/x10"
+        android:overScrollMode="never" />
+</LinearLayout>

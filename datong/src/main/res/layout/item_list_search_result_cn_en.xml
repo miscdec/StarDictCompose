@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relat_item_list_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/x200">
+
+    <TextView
+        android:id="@+id/tv_item_list_search_cn_en_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x20"
+        android:text="可怕的"
+        android:textColor="#767e89"
+        android:textSize="@dimen/x52"
+        android:textStyle="bold" />
+
+    <org.apmem.tools.layouts.FlowLayout
+        android:id="@+id/flow_item_list_search_cn_en_wordCollects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_list_search_cn_en_explain"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginRight="@dimen/x50"
+        android:gravity="center_vertical" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.datong.dict.widget.base.BaseRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_dictCn_mistakes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:overScrollMode="always"
+    android:paddingTop="@dimen/x20"
+    android:paddingBottom="@dimen/x20" />

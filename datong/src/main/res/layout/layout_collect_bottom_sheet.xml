@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coord_collectBottomSheet_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_collectBottomSheet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginTop="@dimen/y50"
+            android:text="添加到单词本"
+            android:textColor="#000000"
+            android:textSize="@dimen/y60" />
+
+        <TextView
+            android:id="@+id/tv_collectBottomSheet_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/x55"
+            android:layout_marginRight="@dimen/x40"
+            android:background="@drawable/shape_outline_01"
+            android:padding="@dimen/x15"
+            android:text="创建单词本"
+            android:textColor="#000000"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:id="@+id/tv_collectBottomSheet_nullTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x600"
+            android:text="一个单词本也没有∑(ι´Дン)ノ"
+            android:textSize="@dimen/x42" />
+
+        <com.datong.dict.widget.base.BaseRecyclerView
+            android:id="@+id/list_collectBottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_collectBottomSheet_title"
+            android:layout_marginTop="@dimen/y40"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

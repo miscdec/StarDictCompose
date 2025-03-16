@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/relat_home_rootView" android:background="#f0f2f1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/statusbar"/>
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/frame_main_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+    <View android:id="@+id/view_home_cover" android:background="@color/red_datong" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x60"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_list_youdao_the21st_explainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x30"
+        android:text="wonder"
+        android:textColor="@color/red_datong"
+        android:textSize="@dimen/x50"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_item_list_youdao_the21st_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20" />
+
+    <TextView
+        android:id="@+id/tv_item_list_youdao_the21st_phraseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x40"
+        android:text="短语"
+        android:textColor="@color/red_datong"
+        android:textSize="@dimen/x40" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_item_list_youdao_the21st_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20" />
+</LinearLayout>

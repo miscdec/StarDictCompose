@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    app:contentPaddingLeft="@dimen/x50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/item_list_header"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50" />
+
+        <TextView
+            android:id="@+id/tv_item_list_ciba_wordRoot_typeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x20"
+            android:text="后缀:-ful"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_list_ciba_wordRoot_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_marginBottom="@dimen/x40"
+            android:lineSpacingExtra="@dimen/x10"
+            android:text="1. 表形容词,有……的;充满……的; 2. 表名词,满,量"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:id="@+id/tv_item_list_ciba_wordRoot_wordClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x40"
+            android:text="adj."
+            android:textColor="@color/blue_ciba"
+            android:textSize="@dimen/x50"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_list_ciba_wordRoot_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textSize="@dimen/x45"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x60"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_list_ciba_wordRoot_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="baneful 有害的,致祸的"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x45" />
+
+                <TextView
+                    android:id="@+id/tv_item_list_ciba_wordRoot_buile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x5"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="bane毒药,祸害+ful有……的;充满……的→adj.有害的,致祸的"
+                    android:textSize="@dimen/x40" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_list_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

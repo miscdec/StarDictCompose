@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x160"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_list_datong_global_pron_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x50"
+        android:text="1."
+        android:textSize="@dimen/x45" />
+
+    <TextView
+        android:id="@+id/tv_item_list_datong_global_pron_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_toRightOf="@+id/tv_item_list_datong_global_pron_index"
+        android:text="男"
+        android:textSize="@dimen/x45" />
+
+    <TextView
+        android:id="@+id/tv_item_list_datong_global_pron_contury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_toRightOf="@+id/tv_item_list_datong_global_pron_gender"
+        android:text="美国"
+        android:textSize="@dimen/x45" />
+
+    <ImageView
+        android:id="@+id/img_item_list_datong_global_pron_sound"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_toRightOf="@+id/tv_item_list_datong_global_pron_contury"
+        android:background="@drawable/item_bg_gary"
+        android:clickable="true"
+        android:padding="@dimen/x10"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_sound" />
+</RelativeLayout>

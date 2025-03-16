@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1000"
+        android:layout_marginLeft="@dimen/x120"
+        android:layout_marginTop="@dimen/x220"
+        android:layout_marginRight="@dimen/x120">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginTop="@dimen/x80"
+                android:layout_marginRight="@dimen/x80"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/et_login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="用户名/邮箱"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/x40"
+                    android:theme="@style/MyEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginTop="@dimen/x50"
+                android:layout_marginRight="@dimen/x80"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/x40"
+                    android:theme="@style/MyEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x115"
+                android:layout_marginLeft="@dimen/x95"
+                android:layout_marginTop="@dimen/x100"
+                android:layout_marginRight="@dimen/x95"
+                android:background="@color/red_datong"
+                android:text="登 录"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x45" />
+
+            <Button
+                android:id="@+id/btn_login_qqLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x115"
+                android:layout_marginLeft="@dimen/x95"
+                android:layout_marginTop="@dimen/x80"
+                android:layout_marginRight="@dimen/x95"
+                android:background="#66b8c9"
+                android:text="QQ登录"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x45" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_login_resetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x50"
+        android:text="忘记密码?"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</RelativeLayout>

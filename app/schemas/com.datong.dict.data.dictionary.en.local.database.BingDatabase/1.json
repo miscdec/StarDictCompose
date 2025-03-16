@@ -1,0 +1,118 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "bd3f7c7b6f6c71ba687bec711fe9d454",
+    "entities": [
+      {
+        "tableName": "dict",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`antonym` TEXT, `baseExpCN` TEXT, `collocation` TEXT, `expEN` TEXT, `expEN2CN` TEXT, `id` INTEGER NOT NULL, `oxford` TEXT, `phoneticUk` TEXT, `phoneticUs` TEXT, `sentence` TEXT, `shape` TEXT, `soundUkUrl` TEXT, `soundUsUrl` TEXT, `synonym` TEXT, `word` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "antonym",
+            "columnName": "antonym",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "baseExpCN",
+            "columnName": "baseExpCN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collocation",
+            "columnName": "collocation",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expEN",
+            "columnName": "expEN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expEN2CN",
+            "columnName": "expEN2CN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "oxford",
+            "columnName": "oxford",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phoneticUk",
+            "columnName": "phoneticUk",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phoneticUs",
+            "columnName": "phoneticUs",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sentence",
+            "columnName": "sentence",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shape",
+            "columnName": "shape",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "soundUkUrl",
+            "columnName": "soundUkUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "soundUsUrl",
+            "columnName": "soundUsUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "synonym",
+            "columnName": "synonym",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "word",
+            "columnName": "word",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bd3f7c7b6f6c71ba687bec711fe9d454')"
+    ]
+  }
+}

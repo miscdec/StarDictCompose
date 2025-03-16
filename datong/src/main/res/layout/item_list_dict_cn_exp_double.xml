@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    app:contentPaddingLeft="@dimen/x60">
+
+    <LinearLayout
+        android:id="@+id/linear_item_list_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_marginBottom="@dimen/x50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_list_dictCn_expDouble_wordClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v.(动词)"
+            android:textColor="@color/blue_dictCn"
+            android:textSize="@dimen/x40"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40">
+
+            <TextView
+                android:id="@+id/tv_item_list_dictCn_expDouble_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x6"
+                android:text="1."
+                android:textSize="@dimen/x45"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x60"
+                android:orientation="vertical">
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_expDouble_expCN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="[U] 惊奇,惊叹,惊异,诧异"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x45" />
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_expDouble_expEN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="a feeling of strangeness, "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x45" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

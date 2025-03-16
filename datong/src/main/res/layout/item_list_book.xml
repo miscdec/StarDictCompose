@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_item_list_book_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x200"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginTop="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    android:foreground="@drawable/item_bg_gary">
+
+    <TextView
+        android:id="@+id/tv_item_list_book_bookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:text="我的单词本"
+        android:textColor="#000000"
+        android:textSize="@dimen/y45" />
+
+    <TextView
+        android:id="@+id/tv_item_list_book_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/x30"
+        android:text="0个单词"
+        android:textColor="#000000"
+        android:textSize="@dimen/x35" />
+</androidx.cardview.widget.CardView>

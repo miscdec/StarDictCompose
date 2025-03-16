@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x380"
+    android:foreground="@drawable/item_bg_gary">
+
+    <RelativeLayout
+        android:id="@+id/relat_item_list_pro_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x60"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_list_pro_price_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="70% off"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/x35"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_list_pro_price_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x20"
+                android:text="¥ 99.99"
+                android:textColor="#000000"
+                android:textSize="@dimen/x70" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_list_pro_price_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x60"
+            android:text="360 days"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

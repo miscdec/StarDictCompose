@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_marginBottom="@dimen/x40"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_list_datong_jp_expJC_wordClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x30"
+            android:text="形容词/イ形容词"
+            android:textColor="#000000"
+            android:textSize="@dimen/x42"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_item_list_datong_jp_expJC_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textColor="#000000"
+                android:textSize="@dimen/x45" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x3"
+                android:layout_marginRight="@dimen/x50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_list_datong_jp_expJC_expCN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x50"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="（接在名词后）表示亲热。"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x42" />
+
+                <TextView
+                    android:id="@+id/tv_item_list_datong_jp_expJC_expJP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x50"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="《人を表す名詞に付けて》親しみを伴う呼び方。"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x42"
+                    android:textStyle="normal" />
+
+                <com.datong.dict.widget.base.BaseRecyclerView
+                    android:id="@+id/list_item_list_datong_jp_expJC_sentence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

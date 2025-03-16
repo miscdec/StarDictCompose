@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    app:contentPaddingLeft="@dimen/x50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_list_datong_en_dictExplain_wordClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x40"
+                android:text="n"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/x48"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_list_datong_en_dictExplain_phonetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/x40"
+                android:text="/ˈwʌndə/"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/x42" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40">
+
+            <TextView
+                android:id="@+id/tv_item_list_datong_en_dictExplain_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textColor="#000000"
+                android:textSize="@dimen/x45" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x60"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_list_datong_en_dictExplain_explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x2"
+                    android:lineSpacingExtra="@dimen/x15"
+                    android:text="奇人；奇事；奇迹；奇观"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x42" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_item_list_datong_en_dictExplain_sentence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x40" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

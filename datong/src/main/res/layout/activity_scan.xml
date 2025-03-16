@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@+id/scanView" android:layout_width="match_parent" android:layout_height="match_parent" app:zxing_framing_rect_height="230dp" app:zxing_framing_rect_width="230dp" app:zxing_preview_scaling_strategy="fitXY" app:zxing_use_texture_view="true"/>
+    <include layout="@layout/statusbar"/>
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/y50" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/y200" android:text="请将二维码置于取景框内" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

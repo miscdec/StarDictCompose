@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y60"
+                android:layout_marginBottom="@dimen/y30"
+                android:text="基础设置"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/y45" />
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_showKeyboard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="搜词界面自动弹出键盘"
+                    android:textSize="@dimen/y40" />
+
+                <Switch
+                    android:id="@+id/switch_settings_showKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_allowedScreenShot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="允许截屏"
+                    android:textSize="@dimen/y40" />
+
+                <Switch
+                    android:id="@+id/switch_settings_allowedScreenShot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_outsideQuery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="跨软件复制查词"
+                    android:textSize="@dimen/y40" />
+
+                <Switch
+                    android:id="@+id/switch_settings_outsideQuery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_back2Search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y180"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginTop="@dimen/y30"
+                    android:lineSpacingExtra="@dimen/y20"
+                    android:text="点击(左上角)返回按钮退回到搜词界面"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginBottom="@dimen/y30"
+                    android:text="当打开多个单词页面时，可以一键关闭所有页面"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y35" />
+
+                <Switch
+                    android:id="@+id/switch_settings_back2Search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_setting_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y60"
+                android:layout_marginBottom="@dimen/y30"
+                android:text="收藏设置"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/y45" />
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_autoCollect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="自动收藏单词"
+                    android:textSize="@dimen/y40" />
+
+                <Switch
+                    android:id="@+id/switch_settings_autoCollect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_collectMode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="收藏方式"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_collectMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="查词时自动收藏"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_clickCollect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="点击查词时自动收藏"
+                    android:textSize="@dimen/y40" />
+
+                <Switch
+                    android:id="@+id/switch_settings_clickCollect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_outsideQueryCollect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="跨软件查词时自动收藏"
+                    android:textSize="@dimen/y40" />
+
+                <Switch
+                    android:id="@+id/switch_settings_outsideQueryCollect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_defaultBook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="默认单词本"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_defaultBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="我的单词本"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y60"
+                android:layout_marginBottom="@dimen/y30"
+                android:text="发音设置"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/y45" />
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_slowSound"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y180"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginTop="@dimen/y30"
+                    android:lineSpacingExtra="@dimen/y20"
+                    android:text="单词慢发音 (Android6.0以上)"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginBottom="@dimen/y30"
+                    android:text="再次点击发音按钮时，会以较慢的速度播放发音"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y35" />
+
+                <Switch
+                    android:id="@+id/switch_settings_slowSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_slowSoundSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="发音速度"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_slowSoundSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="0.6"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y60"
+                android:layout_marginBottom="@dimen/y30"
+                android:text="词典设置"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/y45" />
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_defaultLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="查词语种"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_qureyLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="英语"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_defaultDict"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="默认词典"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_defaultDict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="大同词典"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y200"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y60"
+                android:layout_marginBottom="@dimen/y30"
+                android:text="其他"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/y45" />
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_clearSearchHistory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="清空历史搜索记录"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_searchHistoryCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="12"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_clearTranslateHistory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="清空历史翻译记录"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_translateHistoryCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="12"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_clearCache"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="清除缓存"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_cacheSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="0M"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_settings_chechUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="检查更新"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_settings_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40"
+                    android:text="v1.7.5"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y45" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="给个好评"
+                    android:textSize="@dimen/y40" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:text="关于"
+                    android:textSize="@dimen/y40" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

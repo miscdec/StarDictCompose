@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x900"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginTop="@dimen/x60"
+            android:text="导入"
+            android:textColor="#000000"
+            android:textSize="@dimen/x40"
+            android:textStyle="bold" />
+
+        <com.datong.dict.widget.base.BaseRecyclerView
+            android:id="@+id/list_import_export_btm_sheet_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginTop="@dimen/x60"
+            android:text="导出"
+            android:textColor="#000000"
+            android:textSize="@dimen/x40"
+            android:textStyle="bold" />
+
+        <com.datong.dict.widget.base.BaseRecyclerView
+            android:id="@+id/list_import_export_btm_sheet_export"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40"
+            android:overScrollMode="never" />
+    </LinearLayout>
+</RelativeLayout>

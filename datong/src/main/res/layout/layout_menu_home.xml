@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x900"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relat_menu_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x130">
+
+        <ImageView
+            android:id="@+id/img_menu_avatar"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200"
+            android:layout_marginLeft="@dimen/x80"
+            android:src="@drawable/user_avater" />
+
+        <TextView
+            android:id="@+id/tv_menu_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginTop="@dimen/x35"
+            android:layout_marginRight="@dimen/x100"
+            android:layout_toRightOf="@+id/img_menu_avatar"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_menu_proState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginTop="@dimen/x100"
+            android:layout_toRightOf="@+id/img_menu_avatar"
+            android:textSize="@dimen/x35" />
+    </RelativeLayout>
+
+    <com.datong.dict.widget.base.BaseRecyclerView
+        android:id="@+id/list_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relat_menu_userInfo"
+        android:layout_marginTop="@dimen/x150"
+        android:overScrollMode="never" />
+</RelativeLayout>

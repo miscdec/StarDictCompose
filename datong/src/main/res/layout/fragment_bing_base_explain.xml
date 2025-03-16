@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.datong.dict.widget.base.BaseScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:paddingBottom="@dimen/x20">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_bing_baseExplain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x60"
+                    android:layout_marginTop="@dimen/x30"
+                    android:layout_marginRight="@dimen/x40"
+                    android:layout_marginBottom="@dimen/x50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_bing_baseExplain_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x40"
+                        android:text="wonder"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x80"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:layout_marginRight="@dimen/x40"
+                        android:gravity="center_vertical">
+
+                        <org.apmem.tools.layouts.FlowLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_bing_baseExplain_phoneticUk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/x40" />
+
+                                <ImageView
+                                    android:id="@+id/img_bing_baseExplain_phoneticUk"
+                                    android:layout_width="@dimen/x80"
+                                    android:layout_height="@dimen/x80"
+                                    android:layout_marginLeft="@dimen/x30"
+                                    android:layout_marginRight="@dimen/x20"
+                                    android:background="@drawable/item_bg_gary"
+                                    android:clickable="true"
+                                    android:padding="@dimen/x10"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_sound" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_bing_baseExplain_phoneticUs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/x40" />
+
+                                <ImageView
+                                    android:id="@+id/img_bing_baseExplain_phoneticUs"
+                                    android:layout_width="@dimen/x80"
+                                    android:layout_height="@dimen/x80"
+                                    android:layout_marginLeft="@dimen/x30"
+                                    android:background="@drawable/item_bg_gary"
+                                    android:clickable="true"
+                                    android:padding="@dimen/x10"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_sound" />
+                            </LinearLayout>
+                        </org.apmem.tools.layouts.FlowLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_bing_baseExplain_expCN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:layout_marginRight="@dimen/x40"
+                        android:lineSpacingExtra="@dimen/x25"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x40" />
+
+                    <TextView
+                        android:id="@+id/tv_bing_baseExplain_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:layout_marginRight="@dimen/x40"
+                        android:lineSpacingExtra="@dimen/x25"
+                        android:textSize="@dimen/x40" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_bing_expEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x60"
+                    android:layout_marginTop="@dimen/x50"
+                    android:text="英文释义"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x38"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_bing_baseExplain_expEN"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/x100"
+                    android:layout_marginBottom="@dimen/x50" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </com.datong.dict.widget.base.BaseScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

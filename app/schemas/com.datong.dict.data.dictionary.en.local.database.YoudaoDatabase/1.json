@@ -1,0 +1,124 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "5433535ddeec2f45f573167a2fb0a159",
+    "entities": [
+      {
+        "tableName": "dict",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`authority` TEXT, `bilingual` TEXT, `collins` TEXT, `discriminate` TEXT, `expCN` TEXT, `expEN` TEXT, `id` INTEGER NOT NULL, `originalSound` TEXT, `phoneticUk` TEXT, `phoneticUs` TEXT, `relatWord` TEXT, `shape` TEXT, `synonyms` TEXT, `the21stDict` TEXT, `word` TEXT, `wordGroup` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "authority",
+            "columnName": "authority",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bilingual",
+            "columnName": "bilingual",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collins",
+            "columnName": "collins",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "discriminate",
+            "columnName": "discriminate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expCN",
+            "columnName": "expCN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expEN",
+            "columnName": "expEN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "originalSound",
+            "columnName": "originalSound",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phoneticUk",
+            "columnName": "phoneticUk",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phoneticUs",
+            "columnName": "phoneticUs",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "relatWord",
+            "columnName": "relatWord",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shape",
+            "columnName": "shape",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "synonyms",
+            "columnName": "synonyms",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "the21stDict",
+            "columnName": "the21stDict",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "word",
+            "columnName": "word",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wordGroup",
+            "columnName": "wordGroup",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5433535ddeec2f45f573167a2fb0a159')"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relat_widge_desktop_search"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x130"
+    android:layout_margin="@dimen/x30"
+    android:background="@drawable/shape_bg_desktop_search"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_widget_desktop_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="Search Word"
+        android:textColor="@color/gray_light_1"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/x130"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/x38"
+        android:src="@drawable/ic_search_red" />
+</RelativeLayout>

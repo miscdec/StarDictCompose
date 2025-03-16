@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginTop="@dimen/x40">
+
+            <TextView
+                android:id="@+id/tv_item_list_datong_en_phrase_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x5"
+                android:text="1."
+                android:textSize="@dimen/x45"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x50"
+                android:orientation="vertical">
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_datong_en_phrase_en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="wonder if"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x50" />
+
+                <TextView
+                    android:id="@+id/tv_item_list_datong_en_phrase_cn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="不知道；想知道是否"
+                    android:textSize="@dimen/x42" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x40" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

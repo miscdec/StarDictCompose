@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/statusbar"/>
+        <include layout="@layout/toolbar"/>
+        <com.datong.dict.widget.base.BaseWebview android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/statusbar"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

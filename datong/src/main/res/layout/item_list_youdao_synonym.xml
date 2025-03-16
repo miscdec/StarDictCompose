@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/item_list_header"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_synonym_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textSize="@dimen/x45"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_list_youdao_synonym_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="n. 惊奇；奇迹；惊愕"
+                    android:textSize="@dimen/x45" />
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_youdao_synonym_synonym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="phenomenon , surprise , miracle"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x42" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_list_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

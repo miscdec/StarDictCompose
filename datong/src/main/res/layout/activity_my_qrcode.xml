@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/statusbar"/>
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout android:id="@+id/relat_myQRCode_rootView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <ImageView android:id="@+id/img_myQRCode_qrCode" android:layout_width="@dimen/y800" android:layout_height="@dimen/y800" android:layout_marginTop="@dimen/y150" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/y40" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x100" android:layout_marginRight="@dimen/x100" android:layout_marginBottom="@dimen/y200" android:text="邀请身边的小伙伴下载大同词典，然后扫一下TA的二维码，双方可获得1个月Pro奖励！" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:lineSpacingExtra="@dimen/y15"/>
+    </RelativeLayout>
+</RelativeLayout>

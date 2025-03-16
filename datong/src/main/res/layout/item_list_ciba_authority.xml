@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/item_list_header"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x50">
+
+            <TextView
+                android:id="@+id/tv_item_list_ciba_authority_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x3"
+                android:text="1."
+                android:textSize="@dimen/x45"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x50"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.datong.dict.widget.WordTextView
+                        android:id="@+id/tv_item_list_ciba_authority_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x100"
+                        android:lineSpacingExtra="@dimen/x10"
+                        android:text="For more than one minute our foreign guests remained standing still gaping at this wonder of the world -- the Great Wall."
+                        android:textSize="@dimen/x48" />
+
+                    <ImageView
+                        android:id="@+id/img_item_list_ciba_authority_sound"
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/x80"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/item_bg_gary"
+                        android:clickable="true"
+                        android:padding="@dimen/x10"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_sound" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_item_list_ciba_authority_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_marginRight="@dimen/x100"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="《新英汉大辞典》"
+                    android:textSize="@dimen/x35" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_list_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

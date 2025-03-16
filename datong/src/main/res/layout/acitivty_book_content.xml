@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/statusbar">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@+id/appbar_bookContent" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/x600" app:elevation="0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="100dp" app:layout_scrollFlags="snap|exitUntilCollapsed|scroll">
+                <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@+id/tab" android:layout_width="match_parent" android:layout_height="48dp"/>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/refresh_bookContent" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.datong.dict.widget.base.BaseRecyclerView android:id="@+id/list_bookContent" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/x600" android:layout_below="@+id/statusbar">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/x75" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_bookContent_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:layout_marginRight="@dimen/x300" android:text="单词锦囊" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/x38" android:textColor="#000000" android:ellipsize="end" android:layout_gravity="bottom" android:id="@+id/tv_bookContent_subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:layout_marginTop="@dimen/x20" android:layout_marginRight="@dimen/x250" android:text="不忘初心，放的始终。" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/x38" android:textColor="#000000" android:gravity="right" android:id="@+id/tv_bookContent_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:text="326" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/x64" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <include layout="@layout/statusbar"/>
+    <include layout="@layout/toolbar"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:theme="@style/MyUIStyle" android:id="@+id/fab_learn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x50" android:layout_marginBottom="@dimen/x50" android:src="@mipmap/ic_check" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

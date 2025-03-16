@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    app:contentPaddingLeft="@dimen/x60">
+
+    <LinearLayout
+        android:id="@+id/linear_item_list_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_marginBottom="@dimen/x50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_list_dictCn_collocation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用作名词 (n.)"
+            android:textColor="@color/blue_dictCn"
+            android:textSize="@dimen/x40"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_list_dictCn_collocation_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40"
+            android:text="动词+～"
+            android:textColor="#000000"
+            android:textSize="@dimen/x35"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40">
+
+            <TextView
+                android:id="@+id/tv_item_list_dictCn_collocation_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x6"
+                android:text="1."
+                android:textSize="@dimen/x45"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x60"
+                android:orientation="vertical">
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_collocation_phrase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="brighten the prospect"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x48" />
+
+                <TextView
+                    android:id="@+id/tv_item_list_dictCn_collocation_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="照亮前程"
+                    android:textSize="@dimen/x40" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

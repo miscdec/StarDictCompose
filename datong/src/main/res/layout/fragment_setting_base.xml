@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x60"
+        android:layout_marginBottom="@dimen/x30"
+        android:text="基础设置"
+        android:textColor="@color/red_datong"
+        android:textSize="@dimen/x45" />
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_base_showKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="搜词界面自动弹出键盘"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_base_showKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_base_allowedScreenShot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="允许截屏"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_base_allowedScreenShot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_base_outsideQuery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="跨软件复制查词 / 翻译"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_base_outsideQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_base_fixPhoneticFont"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x180"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/x30"
+            android:lineSpacingExtra="@dimen/x20"
+            android:text="使用内置音标字体"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginBottom="@dimen/x30"
+            android:text="修复音标出现乱码或显示不全"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/x35" />
+
+        <Switch
+            android:id="@+id/switch_setting_base_fixPhoneticFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_base_back2Search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x180"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/x30"
+            android:lineSpacingExtra="@dimen/x20"
+            android:text="点击(左上角)返回按钮退回到搜词界面"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginBottom="@dimen/x30"
+            android:text="当打开多个单词页面时，可以一键关闭所有页面"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/x35" />
+
+        <Switch
+            android:id="@+id/switch_setting_base_back2Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x60"
+        android:layout_marginBottom="@dimen/x30"
+        android:text="查词设置"
+        android:textColor="@color/red_datong"
+        android:textSize="@dimen/x45" />
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_search_cloudSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x180"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/x30"
+            android:lineSpacingExtra="@dimen/x20"
+            android:text="云搜词"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginBottom="@dimen/x30"
+            android:text="优先从云端搜索单词，查词更精准"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/x35" />
+
+        <Switch
+            android:id="@+id/switch_setting_search_cloudSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_search_defaultLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="查词语种"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:id="@+id/tv_setting_search_defaultLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:text="英语"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_search_defaultDict"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="默认词典"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:id="@+id/tv_setting_search_defaultDict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:text="大同词典"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_search_showDictLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="默认展开词典logo"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_search_showDictLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_search_showSearchHistoryTimes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="显示历史查询次数"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_search_showSearchHistoryTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_search_showSearchHistoryExplain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="显示历史查询释义"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_search_showSearchHistoryExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+</LinearLayout>

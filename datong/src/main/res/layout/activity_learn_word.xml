@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/statusbar"/>
+    <include layout="@layout/toolbar"/>
+    <androidx.cardview.widget.CardView android:id="@+id/card" android:background="#ffffff" android:layout_width="@dimen/x900" android:layout_height="@dimen/y1200" android:layout_marginTop="@dimen/x150" android:layout_below="@+id/toolbar" android:layout_centerHorizontal="true" app:cardCornerRadius="8dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="36sp" android:textColor="#000000" android:id="@+id/tvWord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y150" android:text="恋い慕う" android:layout_centerHorizontal="true"/>
+            <LinearLayout android:gravity="center" android:id="@+id/linear" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y80" android:layout_below="@+id/tvWord">
+                <TextView android:textColor="#000000" android:id="@+id/tvPhonetic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x30" android:text="なつかしい"/>
+                <ImageView android:id="@+id/imgSound" android:layout_width="@dimen/x60" android:layout_height="@dimen/x60" android:src="@drawable/ic_sound_black"/>
+            </LinearLayout>
+            <TextView android:textColor="@color/gray_light_1" android:id="@+id/tvTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y250" android:text="点看击查答案" android:layout_below="@+id/linear" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tvDefine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="@dimen/y200" android:layout_marginRight="20dp" android:text="v. 想知道，惊奇\10n. 奇迹，惊奇" android:maxLines="3" android:lines="3" android:layout_below="@+id/linear" android:layout_centerHorizontal="true" android:lineSpacingExtra="5dp"/>
+            <LinearLayout android:gravity="center" android:id="@+id/linearButtons" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/x200" android:layout_alignParentBottom="true">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/tvLookDetails" android:background="@drawable/shape_outline_01" android:paddingLeft="@dimen/x30" android:paddingTop="@dimen/x15" android:paddingRight="@dimen/x30" android:paddingBottom="@dimen/x15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查单词看详情"/>
+                <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/tvUnKnown" android:background="@drawable/shape_outline_01" android:paddingLeft="@dimen/x30" android:paddingTop="@dimen/x15" android:paddingRight="@dimen/x30" android:paddingBottom="@dimen/x15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x50" android:layout_marginRight="@dimen/x50" android:text="不认识"/>
+                <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/tvKnown" android:background="@drawable/shape_outline_01" android:paddingLeft="@dimen/x30" android:paddingTop="@dimen/x15" android:paddingRight="@dimen/x30" android:paddingBottom="@dimen/x15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="认识"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

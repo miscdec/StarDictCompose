@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/relate_book_rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/statusbar">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_book" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/x600" app:elevation="0dp">
+            <com.datong.dict.widget.base.BaseCollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="snap|exitUntilCollapsed|scroll">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_book_logo" android:layout_width="@dimen/x180" android:layout_height="@dimen/x180" android:layout_marginTop="@dimen/x200" android:src="@drawable/img_notes" android:scaleType="centerInside"/>
+                <com.datong.dict.widget.base.BaseTabLayout android:layout_gravity="bottom" android:id="@+id/tabLayout_book" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabTextAppearance="@style/MyTabLayoutStyle"/>
+            </com.datong.dict.widget.base.BaseCollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/refresh_book" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.datong.dict.widget.base.BaseRecyclerView android:id="@+id/list_book" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <TextView android:textSize="@dimen/x42" android:gravity="center" android:id="@+id/tv_book_nullTips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x400" android:text="一个单词本也没有∑(ι´Дン)ノ" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include layout="@layout/statusbar"/>
+    <include layout="@layout/toolbar"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:theme="@style/MyUIStyle" android:id="@+id/fab_book_addBook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x50" android:layout_marginBottom="@dimen/x50" android:src="@drawable/ic_add" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

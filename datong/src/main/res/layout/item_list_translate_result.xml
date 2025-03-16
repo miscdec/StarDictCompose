@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_item_list_translate"
+    android:layout_width="@dimen/x950"
+    android:layout_height="@dimen/y700"
+    android:layout_gravity="center"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y580">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll_item_list_translate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/x40"
+                android:layout_marginRight="@dimen/x30"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_translate_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:textSize="@dimen/x45" />
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/img_item_list_translate_copy"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/item_bg_gary"
+                android:clickable="true"
+                android:padding="@dimen/x15"
+                android:src="@drawable/ic_copy" />
+
+            <ImageView
+                android:id="@+id/img_item_list_translate_voice"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x120"
+                android:background="@drawable/item_bg_gary"
+                android:clickable="true"
+                android:padding="@dimen/x5"
+                android:src="@drawable/ic_sound_black" />
+
+            <ImageView
+                android:id="@+id/img_translate"
+                android:layout_width="27dp"
+                android:layout_height="@dimen/x80"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x220"
+                android:background="@drawable/item_bg_gary"
+                android:clickable="true"
+                android:padding="@dimen/x10"
+                android:src="@drawable/ic_reverse"
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_item_list_translate_logo"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@drawable/item_bg_gary"
+                android:clickable="true"
+                android:padding="@dimen/x10"
+                android:src="@drawable/img_youdao" />
+
+            <TextView
+                android:id="@+id/tv_item_list_translate_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x110"
+                android:text="有道翻译"
+                android:textColor="#000000"
+                android:textSize="@dimen/x40" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relat_item_list_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/x200">
+
+    <TextView
+        android:id="@+id/tv_item_list_search_jp_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:text="修業"
+        android:textColor="#767e89"
+        android:textSize="@dimen/x60" />
+
+    <TextView
+        android:id="@+id/tv_item_list_search_jp_kana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_toRightOf="@+id/tv_item_list_search_jp_word"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="|  しゅうせい ③"
+        android:textColor="#9e9e9e"
+        android:textSize="@dimen/x50" />
+
+    <TextView
+        android:id="@+id/tv_item_list_search_jp_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_list_search_jp_word"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginRight="@dimen/x50"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="1.修业，学习学业、技术。2.修学，学习（技术，学业）。3.同：しゅうぎょう"
+        android:textColor="#9e9e9e"
+        android:textSize="@dimen/x40" />
+</RelativeLayout>

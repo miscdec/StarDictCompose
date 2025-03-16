@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/x40">
+
+    <TextView
+        android:id="@+id/tv_item_list_youdao_collins_explain_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x3"
+        android:text="1."
+        android:textSize="@dimen/x45"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x50"
+        android:orientation="vertical">
+
+        <com.datong.dict.widget.WordTextView
+            android:id="@+id/tv_item_list_youdao_collins_explain_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/x10"
+            android:text="NUM(数词) If you say that someone or something is the one person or thing of a particular kind, you are emphasizing that they are the only person or thing of that kind. 惟一的 [det ADJ] [强调]"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/x30"
+            android:orientation="vertical">
+
+            <com.datong.dict.widget.WordTextView
+                android:id="@+id/tv_item_list_youdao_collins_explain_en_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/x10"
+                android:text="They had alienated the one man who knew the business."
+                android:textSize="@dimen/x40" />
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_collins_explain_cn_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:lineSpacingExtra="@dimen/x10"
+                android:text="他们已经疏远了那个惟一懂这行的人。"
+                android:textSize="@dimen/x35" />
+
+            <com.datong.dict.widget.WordTextView
+                android:id="@+id/tv_item_list_youdao_collins_explain_en_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x30"
+                android:lineSpacingExtra="@dimen/x10"
+                android:text="Where does one go fromLanguage there?"
+                android:textSize="@dimen/x40" />
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_collins_explain_cn_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:lineSpacingExtra="@dimen/x10"
+                android:text="人们从那儿能去哪里？"
+                android:textSize="@dimen/x35" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

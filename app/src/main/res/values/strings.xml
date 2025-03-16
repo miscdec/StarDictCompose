@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MyDict</string>
+    <string name="remove_dict_message">Are you sure you want to remove %s ?</string>
+    <string name="no_dicts">No dictionaries.\n\nTo add a dictionary press + and choose all the dictionary files, such as:\n.ifo, .idx and .dict\n\nNote: you have to choose all the files in one go.</string>
+
+    <!-- Settings -->
+    <string name="settings_log_viewer">Log Viewer</string>
+    <string name="settings_log_viewer_desc">View application runtime logs</string>
+    <string name="settings_repo">Repositories</string>
+    <string name="settings_repo_desc">Manage Magisk modules repositories</string>
+    <string name="settings_app">App</string>
+    <string name="settings_app_desc">Settings about MRepo app itself</string>
+    <string name="settings_about">About</string>
+    <!-- App -->
+    <string name="settings_app_theme">App Theme</string>
+    <string name="settings_app_theme_desc">Change night mode and theme platte</string>
+    <string name="settings_download_path">Download Path</string>
+    <string name="settings_delete_zip">Delete Zip File</string>
+    <string name="settings_delete_zip_desc">Delete zip after the installation is successful, note that this is a best effort and will not work if app does not have permission to delete</string>
+    <string name="settings_navigation_animation">Navigation Animation</string>
+    <string name="settings_navigation_animation_desc">Navigation animation support provided by Accompanist (experimental), note that this has stability issues, please enable it with caution</string>
+    <!-- App Theme -->
+    <string name="app_theme_palette">Theme Palette</string>
+    <string name="app_theme_dark_theme">Dark Theme</string>
+    <string name="app_theme_dark_theme_auto">Auto</string>
+    <string name="app_theme_dark_theme_light">Light</string>
+    <string name="app_theme_dark_theme_dark">Dark</string>
+    <!-- About -->
+    <string name="about_app_version" translatable="false">%s(%s)</string>
+    <string name="about_desc1">Provide modules repositories and Manage modules for Magisk and KernelSU.</string>
+    <string name="about_desc2">Made with ❤️ by %1$s</string>
+
+    <string name="title_activity_setting">Settings</string>
+    <string name="search_placeholder" />
+    <string name="settings_style_desc" />
+    <string name="settings_style">Theme</string>
+
+    <string name="screen_settings">Preference</string>
+    <string name="screen_home">Home</string>
+    <string name="notification_name_download">Download Notification</string>
+    <string name="app_privacy_url">https://github.com/acmpo6ou/MyDict/blob/master/PRIVACY.md</string>
+    <string name="about_privacypolicy_title">Privacy Policy</string>
+    <string name="app_source_url">https://github.com/acmpo6ou/StarDict</string>
+    <string name="about_app_author">Miscdec</string>
+    <string name="screen_dict_title">Dictionaries</string>
+</resources>

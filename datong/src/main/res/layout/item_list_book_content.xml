@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x220"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_item_list_bookContent_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x10"
+        android:textColor="#000000"
+        android:textSize="@dimen/x56" />
+
+    <TextView
+        android:id="@+id/tv_item_list_bookContent_phonetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_toRightOf="@+id/tv_item_list_bookContent_word"
+        android:textColor="#000000"
+        android:textSize="@dimen/x38" />
+
+    <ImageView
+        android:id="@+id/img_item_list_bookContent_playSound"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x13"
+        android:layout_toRightOf="@+id/tv_item_list_bookContent_phonetic"
+        android:background="@drawable/item_bg_gary"
+        android:clickable="true"
+        android:padding="@dimen/x15"
+        android:src="@drawable/ic_sound_black" />
+
+    <TextView
+        android:id="@+id/tv_item_list_bookContent_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_item_list_bookContent_word"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="@dimen/x10"
+        android:maxLines="2"
+        android:textSize="@dimen/x38" />
+</RelativeLayout>

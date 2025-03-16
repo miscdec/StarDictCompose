@@ -1,0 +1,286 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.kotlinAndroid)
+    id('com.google.dagger.hilt.android')
+    id('kotlin-parcelize')
+    id('kotlinx-serialization')
+    id "com.google.protobuf"
+    id "org.jetbrains.kotlin.kapt"
+//    id("com.squareup.sqldelight")
+    id("com.google.devtools.ksp")
+}
+
+android {
+    namespace 'com.acmpo6ou.stardict'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.acmpo6ou.stardict"
+        minSdk 21
+        targetSdk 34
+        versionCode 6
+        versionName "1.5.9"
+        setProperty("archivesBaseName", "stardict")
+        // Required when setting minSdkVersion to 20 or lower
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+//        ndk{
+//            abiFilters 'arm64-v8a'
+//        }
+//        externalNativeBuild {
+//            ndkBuild {
+//                cppFlags ''
+//            }
+//        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+//            jniDebuggable true
+            multiDexEnabled true
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+//    ndkVersion '21.0.6113669'
+    compileOptions {
+        // Flag to enable support for the new language APIs
+        coreLibraryDesugaringEnabled = true
+        // Sets Java compatibility to Java 8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    kotlin {
+        jvmToolchain(17)
+    }
+    java{
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+    buildFeatures {
+        compose = true
+        buildConfig = true
+        viewBinding = true
+//        dataBinding = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion  = libs.versions.androidxComposeCompiler.get()
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+            excludes +=  "META-INF/**"
+            excludes +=  "okhttp3/**"
+            excludes +=  "kotlin/**"
+            excludes +=  "org/**"
+            excludes +=  "**.properties"
+            excludes +=  "**.bin"
+            excludes +=  "**/*.proto"
+            excludes += "DebugProbesKt.bin"
+            excludes += 'META-INF/*.version'
+        }
+    }
+//    testOptions {
+//        unitTests {
+//            includeAndroidResources = true
+//        }
+//    }
+}
+
+// Workaround for https://github.com/google/ksp/issues/1590
+//androidComponents{
+//    onVariants(selector().all()) { variant ->
+//        afterEvaluate {
+//            def capName = variant.name.capitalize()
+//            tasks.getByName("ksp${capName}Kotlin") {
+//                setSource(tasks.getByName("generate${capName}Proto").outputs)
+//            }
+//        }
+//    }
+//}
+
+dependencies {
+
+    debugImplementation(libs.hyperion.core)
+    debugImplementation(libs.hyperion.attr)
+    debugImplementation(libs.hyperion.build.config)
+    debugImplementation(libs.hyperion.crash)
+    debugImplementation(libs.hyperion.disk)
+    debugImplementation(libs.hyperion.geiger.counter)
+    debugImplementation(libs.hyperion.measurement)
+    debugImplementation(libs.hyperion.phoenix)
+    debugImplementation(libs.hyperion.recorder)
+    debugImplementation(libs.hyperion.shared.preferences)
+    debugImplementation(libs.hyperion.timber)
+
+    implementation libs.androidx.documentfile
+    implementation libs.androidx.recyclerview
+    implementation libs.androidx.appcompat
+
+    coreLibraryDesugaring libs.desugar.jdk.libs
+
+
+    implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation libs.commons.lang3
+
+    implementation(libs.androidx.datastore)
+    implementation libs.protobuf.kotlin.lite
+
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.kotlinx.datetime)
+    implementation(libs.kotlin.stdlib)
+
+
+//    implementation libs.compose.html
+
+    implementation libs.libmagic.bindings
+// https://mvnrepository.com/artifact/org.apache.commons/commons-compress
+    implementation(libs.commons.compress)
+    implementation("me.zhanghai.android.libarchive:library:1.0.3")
+    implementation("com.github.omicronapps:7-Zip-JBinding-4Android:Release-16.02-2.02")
+
+
+    // WorkManager dependency
+    implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.androidx.work.multiprocess)
+
+
+    implementation(libs.androidx.room.common)
+// To use Kotlin annotation processing tool (kapt)
+    ksp(libs.androidx.room.compiler)
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation(libs.androidx.room.ktx)
+    // optional - Paging 3 Integration
+    implementation(libs.androidx.room.paging)
+
+
+
+
+
+//    implementation 'io.github.vanpra.compose-material-dialogs:core:0.9.0'
+//    implementation 'io.github.vanpra.compose-material-dialogs:color:0.9.0'
+
+    implementation libs.androidx.constraintlayout.compose
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation libs.androidx.core.splashscreen
+
+    implementation libs.core.ktx
+    implementation libs.lifecycle.runtime.ktx
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation libs.androidx.lifecycle.service
+    implementation libs.activity.compose
+    
+    implementation platform(libs.compose.bom)
+    implementation libs.ui.ui
+    implementation libs.uitooling
+    implementation libs.ui.graphics
+    implementation libs.ui.tooling.preview
+    implementation libs.material3
+    implementation "androidx.compose.runtime:runtime-livedata"
+
+    // SQLDelight
+//    implementation(libs.coroutines.extensions)
+//    implementation(libs.sqldelight.android.driver)
+
+// Ktor
+    implementation libs.ktor.client.core
+    implementation libs.ktor.client.okhttp
+    implementation(libs.ktor.client.android)
+    implementation(libs.ktor.client.cio)
+//    implementation "ch.qos.logback:logback-classic:+"
+    implementation(libs.ktor.serialization.gson)
+    implementation(libs.ktor.serialization.kotlinx.json)
+    implementation(libs.ktor.client.content.negotiation)
+    implementation libs.ktor.client.logging
+
+    // Optional - Included automatically by material, only add when you need
+    // the icons but not the material library (e.g. when using Material3 or a
+    // custom design system based on Foundation)
+    implementation libs.androidx.material.icons.core
+    // Optional - Add full set of material icons
+    implementation libs.androidx.material.icons.extended
+    // Optional - Add window size utils
+    implementation 'androidx.compose.material3:material3-window-size-class'
+
+    kapt(libs.hilt.ext.compiler)
+    implementation(libs.hilt.android)
+//    implementation(libs.hilt.ext.work)
+    kapt(libs.hilt.compiler)
+
+    implementation(libs.androidx.hilt.navigation.compose)
+//    implementation(libs.accompanist.navigation.animation)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.accompanist.permissions)
+    implementation libs.accompanist.drawablepainter
+    implementation(libs.accompanist.systemuicontroller)
+    implementation libs.accompanist.webview
+
+    implementation libs.androidx.ui.text.google.fonts
+
+    implementation libs.splitties.systemservices
+    implementation(libs.splitties.appctx)
+
+
+
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.test.ext.junit
+    androidTestImplementation libs.espresso.core
+    androidTestImplementation platform(libs.compose.bom)
+    androidTestImplementation libs.ui.test.junit4
+    debugImplementation libs.ui.tooling.preview
+    debugImplementation libs.ui.test.manifest
+
+//    testImplementation libs.robolectric
+//    testImplementation libs.mockito.kotlin
+//    testImplementation libs.javafaker
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes true
+}
+
+
+//
+//sqldelight {
+//    database("TranserDatabase"){
+//        Database { // This will be the name of the generated database class.
+//            packageName = "com.haeyum.common"
+//        }
+//    }
+//}
+
+protobuf {
+    protoc {
+        artifact = libs.protobuf.protoc.get().toString()
+    }
+
+    // for more information.
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                register("java") {
+                    option("lite")
+                }
+                register("kotlin") {
+                    option("lite")
+                }
+            }
+        }
+    }
+}
+

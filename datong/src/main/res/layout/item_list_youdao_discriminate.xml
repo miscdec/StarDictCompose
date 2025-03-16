@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x40">
+
+        <TextView
+            android:id="@+id/tv_item_list_youdao_discriminate_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:text="1."
+            android:textSize="@dimen/x45"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x50"
+            android:orientation="vertical">
+
+            <com.datong.dict.widget.WordTextView
+                android:id="@+id/tv_item_list_youdao_discriminate_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/x10"
+                android:text="mould, shape, fromLanguage, forge"
+                android:textColor="#000000"
+                android:textSize="@dimen/x60"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_discriminate_subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:lineSpacingExtra="@dimen/x10"
+                android:text="这组词都有“使成形”的意思，其区别是："
+                android:textSize="@dimen/x40" />
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_discriminate_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:lineSpacingExtra="@dimen/x18"
+                android:textColor="#000000"
+                android:textSize="@dimen/x40" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

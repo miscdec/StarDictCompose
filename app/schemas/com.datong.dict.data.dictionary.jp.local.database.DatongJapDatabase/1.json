@@ -1,0 +1,120 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "af07d859aa0ea4198015b536aa8c9bf2",
+    "entities": [
+      {
+        "tableName": "Index_",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`accent` TEXT, `expBase` TEXT, `expJP` TEXT, `indexExpBase` TEXT, `indexExpJP` TEXT, `kana` TEXT, `romaji` TEXT, `word` TEXT, `wordClass` TEXT, `wordId` TEXT NOT NULL, PRIMARY KEY(`wordId`))",
+        "fields": [
+          {
+            "fieldPath": "accent",
+            "columnName": "accent",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expBase",
+            "columnName": "expBase",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expJP",
+            "columnName": "expJP",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "indexExpBase",
+            "columnName": "indexExpBase",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "indexExpJP",
+            "columnName": "indexExpJP",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "kana",
+            "columnName": "kana",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "romaji",
+            "columnName": "romaji",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "word",
+            "columnName": "word",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wordClass",
+            "columnName": "wordClass",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "wordId"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Content",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`example` TEXT, `expCJ` TEXT, `wordId` TEXT NOT NULL, PRIMARY KEY(`wordId`))",
+        "fields": [
+          {
+            "fieldPath": "example",
+            "columnName": "example",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expCJ",
+            "columnName": "expCJ",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "wordId"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'af07d859aa0ea4198015b536aa8c9bf2')"
+    ]
+  }
+}

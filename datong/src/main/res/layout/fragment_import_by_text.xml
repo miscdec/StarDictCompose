@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1200"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:background="@null"
+        android:gravity="start"
+        android:lineSpacingExtra="@dimen/x15"
+        android:padding="@dimen/x20"
+        android:textSize="@dimen/x42" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginTop="@dimen/x25"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioBtnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x25"
+            android:tag="radio01"
+            android:text="列表" />
+
+        <RadioButton
+            android:id="@+id/radioBtnSentence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="段落" />
+    </RadioGroup>
+
+    <com.datong.dict.widget.base.FlatButton
+        android:id="@+id/btnImport"
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/x125"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x100"
+        app:cardBackgroundColor="@color/red_datong"
+        app:cardCornerRadius="10dp" />
+</RelativeLayout>

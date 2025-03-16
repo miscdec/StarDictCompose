@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x380"
+    android:clickable="true"
+    android:foreground="@drawable/item_bg_gary">
+
+    <ImageView
+        android:id="@+id/img_item_list_pro_function"
+        android:layout_width="@dimen/x160"
+        android:layout_height="@dimen/x160"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x70"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tv_item_list_pro_function_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/x50"
+        android:text="离线词典"
+        android:textColor="#000000"
+        android:textSize="@dimen/y40" />
+</androidx.cardview.widget.CardView>

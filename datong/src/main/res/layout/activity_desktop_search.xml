@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/relat_desktopSearch_rootview" android:background="#efefef" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/statusbar"/>
+    <RelativeLayout android:id="@+id/relat_desktopSearch_search" android:background="@drawable/shape_bg_desktop_search" android:layout_width="match_parent" android:layout_height="@dimen/x130" android:layout_margin="@dimen/x30" android:layout_below="@+id/statusbar">
+        <EditText android:textSize="15sp" android:textColorHint="@color/gray_light_1" android:id="@+id/et_desktopSearch_input" android:background="@null" android:paddingLeft="@dimen/x30" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="@dimen/x130" android:hint="Search Word" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/img_desktopSearch_logo" android:padding="@dimen/x38" android:layout_width="@dimen/x130" android:layout_height="@dimen/x130" android:src="@drawable/ic_search_red" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.datong.dict.widget.base.BaseRecyclerView android:id="@+id/list_desktopSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/relat_desktopSearch_search" android:overScrollMode="never"/>
+</RelativeLayout>

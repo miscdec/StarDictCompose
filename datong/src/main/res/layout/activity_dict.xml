@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/relat_dict_rootView" android:background="#efefef" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/frame_dict_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/statusbar"/>
+    <include layout="@layout/statusbar"/>
+    <include layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_dict_selector" android:background="@drawable/shape_bg_dict_selector" android:paddingLeft="@dimen/x30" android:paddingRight="@dimen/x30" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/y100" android:layout_marginLeft="@dimen/x60" android:layout_marginRight="@dimen/x60" android:layout_marginBottom="@dimen/y50" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

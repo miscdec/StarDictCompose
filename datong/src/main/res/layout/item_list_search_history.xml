@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y150"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/img_item_list_search_history_icon"
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/x60"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:src="@drawable/ic_history" />
+
+    <TextView
+        android:id="@+id/tv_item_list_search_history_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_toRightOf="@+id/img_item_list_search_history_icon"
+        android:text="wonder"
+        android:textColor="#000000"
+        android:textSize="@dimen/x55" />
+
+    <TextView
+        android:id="@+id/tv_item_list_search_history_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x100"
+        android:layout_toRightOf="@+id/tv_item_list_search_history_word"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingTop="@dimen/x10"
+        android:singleLine="true"
+        android:text="wonder"
+        android:textSize="@dimen/x42" />
+
+    <TextView
+        android:id="@+id/tv_item_list_search_history_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x40"
+        android:text="6"
+        android:textColor="#000000"
+        android:textSize="@dimen/x50"
+        android:textStyle="bold" />
+</RelativeLayout>

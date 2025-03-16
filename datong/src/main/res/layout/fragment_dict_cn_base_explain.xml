@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coord_datong_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always">
+
+    <com.datong.dict.widget.base.BaseScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:paddingBottom="@dimen/x20">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dictCn_baseExplain_baseExplain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/x30"
+                    android:layout_marginBottom="@dimen/x50"
+                    android:orientation="vertical">
+
+                    <org.apmem.tools.layouts.FlowLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:layout_marginRight="@dimen/x40"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_dictCn_baseExplain_word"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/x40"
+                            android:text="wonder"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/x80"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/x10">
+
+                            <TextView
+                                android:id="@+id/tv_dictCn_baseExplain_syllable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="won·der"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/x45" />
+
+                            <TextView
+                                android:id="@+id/tv_dictCn_baseExplain_wordLevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/x40"
+                                android:text="★★★★★"
+                                android:textColor="#faa03b"
+                                android:textSize="@dimen/x45" />
+                        </LinearLayout>
+                    </org.apmem.tools.layouts.FlowLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:layout_marginTop="@dimen/x20"
+                        android:layout_marginRight="@dimen/x40"
+                        android:gravity="center_vertical">
+
+                        <org.apmem.tools.layouts.FlowLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/x40"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_dictCn_baseExplain_phoneticUk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="英 /&apos;wʌndə(r)/"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/x40" />
+
+                                <ImageView
+                                    android:id="@+id/img_dictCn_baseExplain_phoneticUk_man"
+                                    android:layout_width="@dimen/x80"
+                                    android:layout_height="@dimen/x80"
+                                    android:layout_marginLeft="@dimen/x30"
+                                    android:background="@drawable/item_bg_gary"
+                                    android:clickable="true"
+                                    android:padding="@dimen/x10"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_sound" />
+
+                                <ImageView
+                                    android:id="@+id/img_dictCn_baseExplain_phoneticUk_woman"
+                                    android:layout_width="@dimen/x80"
+                                    android:layout_height="@dimen/x80"
+                                    android:layout_marginLeft="@dimen/x5"
+                                    android:background="@drawable/item_bg_gary"
+                                    android:clickable="true"
+                                    android:padding="@dimen/x10"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_sound" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/x20"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_dictCn_baseExplain_phoneticUs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="美 /&apos;wʌndər/"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/x40" />
+
+                                <ImageView
+                                    android:id="@+id/img_dictCn_baseExplain_phoneticUs_man"
+                                    android:layout_width="@dimen/x80"
+                                    android:layout_height="@dimen/x80"
+                                    android:layout_marginLeft="@dimen/x30"
+                                    android:background="@drawable/item_bg_gary"
+                                    android:clickable="true"
+                                    android:padding="@dimen/x10"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_sound" />
+
+                                <ImageView
+                                    android:id="@+id/img_dictCn_baseExplain_phoneticUs_woman"
+                                    android:layout_width="@dimen/x80"
+                                    android:layout_height="@dimen/x80"
+                                    android:layout_marginLeft="@dimen/x5"
+                                    android:background="@drawable/item_bg_gary"
+                                    android:clickable="true"
+                                    android:padding="@dimen/x10"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_sound" />
+                            </LinearLayout>
+                        </org.apmem.tools.layouts.FlowLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_dictCn_baseExplain_expCN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:layout_marginTop="@dimen/x20"
+                        android:layout_marginRight="@dimen/x40"
+                        android:lineSpacingExtra="@dimen/x25"
+                        android:text="n. 惊奇；惊愕；奇迹；奇观\10v. 惊奇；想知道；怀疑\10adj. 奇妙的；非凡的"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x40" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dictCn_baseExplain_expEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/x50"
+                    android:layout_marginBottom="@dimen/x50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:text="英文释义"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x38"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list_dictCn_baseExplain_ExpEN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dictCn_baseExplain_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/x50"
+                    android:layout_marginBottom="@dimen/x50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:text="单词变形"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x38"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_dictCn_baseExplain_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:layout_marginTop="@dimen/x30"
+                        android:layout_marginRight="@dimen/x40"
+                        android:lineSpacingExtra="@dimen/x20"
+                        android:text="名词: wonderer\10过去式: wondered\10过去分词: wondered\10现在分词: wondering\10第三人称单数: wonders"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x40" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </com.datong.dict.widget.base.BaseScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

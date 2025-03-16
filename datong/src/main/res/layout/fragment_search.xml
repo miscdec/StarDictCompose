@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x700"
+        android:background="@color/red_datong"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/x150"
+            app:layout_scrollFlags="snap|exitUntilCollapsed|scroll">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_search_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x150"
+                    android:text="DatongDict_"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/x110"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_search_subTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x50"
+                    android:layout_marginTop="@dimen/x30"
+                    android:layout_marginRight="@dimen/x50"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="Search definitions from Youdao, Bing, Collins, Oxford, Cambridge, Longman, Merriam-Webster, vocabulary, etymonline, etc"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/x30" />
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x160"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x618"
+        android:layout_marginRight="@dimen/x40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x160">
+
+            <EditText
+                android:id="@+id/et_search_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:hint="Search Word"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/x40"
+                android:singleLine="true"
+                android:textSize="@dimen/x45" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_search_logo"
+            android:layout_width="@dimen/x130"
+            android:layout_height="@dimen/x130"
+            android:layout_gravity="center"
+            android:background="@drawable/item_bg_gary"
+            android:clickable="true"
+            android:padding="@dimen/x40"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_search_functionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginTop="@dimen/x140"
+                android:text="FUNCTIONS"
+                android:textColor="#000000"
+                android:textSize="@dimen/x36" />
+
+            <com.datong.dict.widget.base.BaseRecyclerView
+                android:id="@+id/list_search_function"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1000"
+                android:layout_marginTop="@dimen/x220"
+                android:overScrollMode="never"
+                android:paddingLeft="@dimen/x15"
+                android:paddingRight="@dimen/x15" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.datong.dict.widget.base.BaseRecyclerView
+        android:id="@+id/list_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x85"
+        android:background="#f0f2ef"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refesh_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x85"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.datong.dict.widget.base.BaseRecyclerView
+            android:id="@+id/list_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f2ef"
+            android:overScrollMode="never"
+            android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

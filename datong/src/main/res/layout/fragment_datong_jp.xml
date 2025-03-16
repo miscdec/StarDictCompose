@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_dict_datong"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x600"
+        android:orientation="vertical"
+        app:elevation="0dp">
+
+        <com.datong.dict.widget.base.BaseCollapsingToolbarLayout
+            android:id="@+id/collapsing_dict_datong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:minHeight="@dimen/x310"
+            app:layout_scrollFlags="snap|exitUntilCollapsed|scroll">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_dict_datong_logo"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/x150"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x170"
+                android:src="@mipmap/ic_launcher_datong" />
+
+            <TextView
+                android:id="@+id/tv_dict_datong_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/x80"
+                android:text="大同词典"
+                android:textColor="#000000"
+                android:textSize="@dimen/x42" />
+
+            <com.datong.dict.widget.base.BaseTabLayout
+                android:id="@+id/tabLayout_dict_datong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:tabTextAppearance="@style/MyTabLayoutStyle" />
+        </com.datong.dict.widget.base.BaseCollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refesh_dict_datong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_dict_datong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

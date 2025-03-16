@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginTop="@dimen/x20"
+    android:layout_marginRight="@dimen/x20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_marginRight="@dimen/x40"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_list_youdao_collins_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x50"
+            android:text="NUMBER"
+            android:textColor="#000000"
+            android:textSize="@dimen/x50"
+            android:textStyle="bold" />
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_collins_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x20"
+                android:text="ones"
+                android:textColor="@color/red_datong"
+                android:textSize="@dimen/x55"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_collins_phonetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x20"
+                android:text="/wʌn/"
+                android:textSize="@dimen/x40" />
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_collins_starCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x20"
+                android:text="★★★★"
+                android:textColor="#f48b31"
+                android:textSize="@dimen/x45" />
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_collins_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x20"
+                android:text="CET4 TEM4"
+                android:textColor="#000000"
+                android:textSize="@dimen/x40" />
+
+            <TextView
+                android:id="@+id/tv_item_list_youdao_collins_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shaping, shaped, shapes "
+                android:textSize="@dimen/x40" />
+        </org.apmem.tools.layouts.FlowLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_item_list_youdao_collins_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginBottom="@dimen/x40"
+            android:scrollbars="none" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

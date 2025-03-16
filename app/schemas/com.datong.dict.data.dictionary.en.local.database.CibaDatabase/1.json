@@ -1,0 +1,148 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "ab980a0ce727135dc191ecd930d683e3",
+    "entities": [
+      {
+        "tableName": "dict",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`analysis` TEXT, `antonym` TEXT, `authority` TEXT, `bilingual` TEXT, `cet4` TEXT, `cet6` TEXT, `collins` TEXT, `expCN` TEXT, `expEn2Cn` TEXT, `expEn2En` TEXT, `id` INTEGER NOT NULL, `phoneticUk` TEXT, `phoneticUs` TEXT, `phrase` TEXT, `shape` TEXT, `soundUkUrl` TEXT, `soundUsUrl` TEXT, `synonym` TEXT, `word` TEXT, `wordRoot` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "analysis",
+            "columnName": "analysis",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "antonym",
+            "columnName": "antonym",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "authority",
+            "columnName": "authority",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bilingual",
+            "columnName": "bilingual",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cet4",
+            "columnName": "cet4",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cet6",
+            "columnName": "cet6",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collins",
+            "columnName": "collins",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expCN",
+            "columnName": "expCN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expEn2Cn",
+            "columnName": "expEn2Cn",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expEn2En",
+            "columnName": "expEn2En",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phoneticUk",
+            "columnName": "phoneticUk",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phoneticUs",
+            "columnName": "phoneticUs",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phrase",
+            "columnName": "phrase",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shape",
+            "columnName": "shape",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "soundUkUrl",
+            "columnName": "soundUkUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "soundUsUrl",
+            "columnName": "soundUsUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "synonym",
+            "columnName": "synonym",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "word",
+            "columnName": "word",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wordRoot",
+            "columnName": "wordRoot",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ab980a0ce727135dc191ecd930d683e3')"
+    ]
+  }
+}

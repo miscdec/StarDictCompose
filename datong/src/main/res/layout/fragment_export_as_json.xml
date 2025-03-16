@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/tvPreview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1200"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:background="@null"
+        android:lineSpacingExtra="@dimen/x15"
+        android:padding="@dimen/x20"
+        android:scrollbars="none"
+        android:textSize="@dimen/x42" />
+
+    <org.apmem.tools.layouts.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPreview"
+        android:layout_marginTop="@dimen/x50">
+
+        <CheckBox
+            android:id="@+id/ckbIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25"
+            android:text="序号"
+            android:textSize="@dimen/x40" />
+
+        <CheckBox
+            android:id="@+id/ckbCn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25"
+            android:text="中文释义"
+            android:textSize="@dimen/x40" />
+
+        <CheckBox
+            android:id="@+id/ckbEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25"
+            android:text="英文释义"
+            android:textSize="@dimen/x40" />
+    </org.apmem.tools.layouts.FlowLayout>
+
+    <com.datong.dict.widget.base.FlatButton
+        android:id="@+id/btnExport"
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/x125"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x100"
+        app:cardBackgroundColor="@color/red_datong"
+        app:cardCornerRadius="10dp" />
+</RelativeLayout>

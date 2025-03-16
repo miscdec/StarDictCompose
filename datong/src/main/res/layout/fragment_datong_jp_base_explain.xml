@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:paddingBottom="@dimen/x20">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_datong_baseExplain_expBase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x60"
+                    android:layout_marginTop="@dimen/x30"
+                    android:layout_marginRight="@dimen/x60"
+                    android:layout_marginBottom="@dimen/x50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_datong_baseExplain_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大丈夫"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x80"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x10"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_datong_baseExplain_kana"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="だいじょうふ"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/x42" />
+
+                        <TextView
+                            android:id="@+id/tv_datong_baseExplain_accent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" ③"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/x42" />
+
+                        <TextView
+                            android:id="@+id/tv_datong_baseExplain_romaji"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" / DAIJOUFU"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/x42" />
+
+                        <ImageView
+                            android:id="@+id/img_datong_baseExplain_sound"
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_marginLeft="@dimen/x30"
+                            android:layout_marginRight="@dimen/x20"
+                            android:background="@drawable/item_bg_gary"
+                            android:clickable="true"
+                            android:padding="@dimen/x10"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_sound" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_datong_baseExplain_expBase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:lineSpacingExtra="@dimen/x25"
+                        android:textColor="#000000"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/x42" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_datong_baseExplain_expJP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/x50"
+                    android:layout_marginBottom="@dimen/x50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:text="日语释义"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x38"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_datong_baseExplain_expJP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:layout_marginTop="@dimen/x30"
+                        android:layout_marginRight="@dimen/x40"
+                        android:lineSpacingExtra="@dimen/x28"
+                        android:textColor="#000000"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/x42" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

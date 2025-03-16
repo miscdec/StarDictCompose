@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/x20"
+    android:orientation="vertical">
+
+    <com.datong.dict.widget.WordTextView
+        android:id="@+id/tv_item_list_ciba_expEN2CN_sentence_en"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/x10"
+        android:text="I was just beginning toLanguage wonder where you were."
+        android:textSize="@dimen/x40" />
+
+    <TextView
+        android:id="@+id/tv_item_list_ciba_expEN2CN_sentence_cn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:lineSpacingExtra="@dimen/x10"
+        android:text="我刚才正琢磨你上哪儿了呢。"
+        android:textSize="@dimen/x35" />
+</LinearLayout>

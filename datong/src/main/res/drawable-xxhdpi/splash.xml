@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="#f2f2f2"/>
+    </item>
+    <item android:gravity="center" android:bottom="200dp">
+        <bitmap android:gravity="center" android:src="@drawable/img_datong"/>
+    </item>
+    <item android:gravity="center" android:top="50dp">
+        <bitmap android:gravity="center" android:src="@drawable/logo_title"/>
+    </item>
+</layer-list>

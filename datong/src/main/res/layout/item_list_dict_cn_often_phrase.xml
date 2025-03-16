@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    app:contentPaddingLeft="@dimen/x60">
+
+    <LinearLayout
+        android:id="@+id/linear_item_list_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_marginBottom="@dimen/x50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_list_dictCn_oftenPhrase_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wonder about (v.+prep.)"
+            android:textColor="@color/blue_dictCn"
+            android:textSize="@dimen/x48"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40">
+
+            <TextView
+                android:id="@+id/tv_item_list_dictCn_oftenPhrase_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textSize="@dimen/x45"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x60"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_list_dictCn_oftenPhrase_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="想知道; 对…感到奇怪; 考虑 want toLanguage know "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x40"
+                    android:textStyle="normal" />
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_oftenPhrase_phrase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:lineSpacingExtra="@dimen/x10"
+                    android:text="wonder about sb/sth/v-ing/wh-clause"
+                    android:textSize="@dimen/x45"
+                    android:textStyle="bold" />
+
+                <com.datong.dict.widget.WordTextView
+                    android:id="@+id/tv_item_list_dictCn_oftenPhrase_sentence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:lineSpacingExtra="@dimen/x15"
+                    android:text="I sometimes wonder about my old friend, where she is now and what she&apos;s doing.\10我有时思念我的老朋友,她现在在哪儿,在做些什么。\10Do you often wonder about the future of the world?\10你时常考虑世界的未来吗?" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

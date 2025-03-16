@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    app:contentPaddingLeft="@dimen/x60">
+
+    <LinearLayout
+        android:id="@+id/linear_item_list_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_marginRight="@dimen/x60"
+        android:layout_marginBottom="@dimen/x50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_list_dictCn_synonAndAnton_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/x10"
+            android:text="近义词"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45"
+            android:textStyle="bold" />
+
+        <com.datong.dict.widget.WordTextView
+            android:id="@+id/tv_item_list_dictCn_synonAndAnton_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x30"
+            android:lineSpacingExtra="@dimen/x20"
+            android:text="conjecture / marvel / question / amazement / astonishment / puzzlement"
+            android:textColor="#000000"
+            android:textSize="@dimen/x46" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

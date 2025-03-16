@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1000"
+        android:layout_marginLeft="@dimen/x120"
+        android:layout_marginTop="@dimen/x220"
+        android:layout_marginRight="@dimen/x120">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginTop="@dimen/x80"
+                android:layout_marginRight="@dimen/x80"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/et_register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="常用邮箱"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/x40"
+                    android:theme="@style/MyEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginTop="@dimen/x50"
+                android:layout_marginRight="@dimen/x80"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/et_register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="密码"
+                    android:inputType="textUri"
+                    android:textSize="@dimen/x40"
+                    android:theme="@style/MyEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_register_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x115"
+                android:layout_marginLeft="@dimen/x95"
+                android:layout_marginTop="@dimen/x100"
+                android:layout_marginRight="@dimen/x95"
+                android:background="@color/red_datong"
+                android:text="注 册"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x45" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x92"
+                android:layout_marginTop="@dimen/x82"
+                android:layout_marginRight="@dimen/x92"
+                android:lineSpacingExtra="@dimen/y12"
+                android:text="邮箱地址将用于登录，密码找回等重要操作，一旦注册将无法更改，建议填写常用邮箱！"
+                android:textSize="@dimen/x38" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

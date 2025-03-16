@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coord_createBook_rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/statusbar"/>
+        <include layout="@layout/toolbar"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+            <com.datong.dict.widget.base.BaseTabLayout android:id="@+id/tabLayout_createBook" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabTextAppearance="@style/MyTabLayoutStyle"/>
+            <com.datong.dict.widget.base.BaseViewPager android:id="@+id/pager_createBook" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabLayout_createBook"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:theme="@style/MyUIStyle" android:layout_gravity="bottom|right" android:id="@+id/fab_createBook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x50" android:layout_marginBottom="@dimen/x50" android:src="@drawable/ic_done"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

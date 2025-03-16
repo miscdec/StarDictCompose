@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x60"
+        android:layout_marginBottom="@dimen/x30"
+        android:text="发音设置"
+        android:textColor="@color/red_datong"
+        android:textSize="@dimen/x45" />
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_sound_autoPlaySound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="自动发音"
+            android:textSize="@dimen/x40" />
+
+        <Switch
+            android:id="@+id/switch_setting_sound_autoPlaySound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_sound_phoneticType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="默认音标类型"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:id="@+id/tv_setting_sound_phoneticType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:text="美式音标"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_sound_slowSound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x180"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/x30"
+            android:lineSpacingExtra="@dimen/x20"
+            android:text="单词慢发音 (Android6.0以上)"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginBottom="@dimen/x30"
+            android:text="再次点击发音按钮时，会以较慢的速度播放发音"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/x35" />
+
+        <Switch
+            android:id="@+id/switch_setting_sound_slowSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:theme="@style/MySwitch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_setting_sound_slowSoundSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="发音速度"
+            android:textSize="@dimen/x40" />
+
+        <TextView
+            android:id="@+id/tv_setting_sound_slowSoundSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:text="0.6"
+            android:textColor="#000000"
+            android:textSize="@dimen/x45" />
+    </RelativeLayout>
+</LinearLayout>

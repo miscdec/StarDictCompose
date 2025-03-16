@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_package = "com.acmpo6ou.stardict.datastore.setting";
+option java_multiple_files = true;
+
+
+enum DarkMode {
+    FOLLOW_SYSTEM = 0;
+    ALWAYS_OFF = 1;
+    ALWAYS_ON = 2;
+}
+
+message DictPath {
+repeated string path = 1;
+}
+
+message UserPreferences {
+//  bool usingDynamicColor = 1;
+  DarkMode darkMode = 2;
+  int32 themeColor = 3;
+  bool enableNavigationAnimation = 4; // TODO: Waiting for https://github.com/google/accompanist/issues/1487 to be fixed
+  float fontSize = 5;
+  DictPath dictPath = 6;
+//  string downloadPath = 4;
+//  bool deleteZipFile = 5;
+
+}

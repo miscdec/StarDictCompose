@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/red_datong</item>
+    </style>
+    <style name="MyEditText" parent="@style/Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/red_datong</item>
+        <item name="colorControlNormal">@color/red_datong</item>
+    </style>
+    <style name="MyHintText" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+    <style name="MySwitch" parent="@style/Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/red_datong</item>
+    </style>
+    <style name="MyTabLayoutStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">@dimen/x42</item>
+    </style>
+    <style name="MyUIStyle" parent="@style/Theme.AppCompat.Light">
+        <item name="colorAccent">@color/red_datong</item>
+        <item name="colorPrimary">@color/red_datong</item>
+        <item name="colorPrimaryDark">@color/red_datong</item>
+    </style>
+    <style name="OutsideQueryTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="colorAccent">@color/transparent</item>
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+    </style>
+
+
+</resources>
